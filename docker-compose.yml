@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app:
+    container_name: deeplinkconverterdocker
+    image: deeplinkconverterdocker
+    build: ./
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres-db
+  postgres-db:
+    image: postgres:latest
+    container_name: postgresqldb
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: haticeetoglu
+      POSTGRES_PASSWORD: 123456789
+      POSTGRES_DB: postgres

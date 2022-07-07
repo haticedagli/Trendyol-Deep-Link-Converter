@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    password: 123456789
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: haticeetoglu
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+    properties:
+      hibernate:
+        ddl-auto: create
+        jdbc:
+          batch_size: 200
+          batch_versioned_data: true
+        order_inserts: true
+        order_updates: true
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
