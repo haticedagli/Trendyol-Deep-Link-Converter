@@ -1,6 +1,17 @@
-# TrendyolCase-HaticeEtoglu
+# Trendyol Backend Developer Hiring Case
 
-# Running 
+##### Addittional Info: This task was completed on September 12, 2021. It is not current time. 
+
+### Task 1 (Initialize a web service)
+- Start a new web service project and initialize it. It should be ready to be run.
+
+### Task 2 (Web URL to Deeplink)
+Write an endpoint that converts web URLs to deeplinks.
+- The endpoint should get a web URL and return a converted deeplink.
+- You must store each request and response in persistent storage.
+- You should design your table columns/document fields
+
+## Running 
 
 - Setting PostgreSQL
 
